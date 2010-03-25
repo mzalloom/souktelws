@@ -1,0 +1,12 @@
+{% extends base_template %}
+
+{% block content %}
+<table>
+   {% for record in records %}
+    <tr> <td><a href="{% url profile record.id %}">{{ record.First_Name }}</a></td></tr>
+{% endfor %}
+<h5> No. of  = {{ TotalRecords }}</h5>
+</table>
+{% endblock %}
+
+

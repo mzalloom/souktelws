@@ -8,6 +8,5 @@ class App(rapidsms.app.App):
 	
 		if message.text.startswith('Hello'):
 			message.respond(u"Hello All")
-	
-		return True
-
+			return True
+		return False 

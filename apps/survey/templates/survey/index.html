@@ -11,11 +11,11 @@
 <th>Profile</th>
 </tr>
 <!-- function and objects needs to be in between % -->
-   {% for record in records %}
+   {% for profile in records %}
     <tr>
 <!-- variables retrieved needs to be in between {}  -->
-    <td>{{ record.id }}</td>
-    <td><a href="{% url profile record.id %}">{{ record.First_Name }}</a></td>
+    <td>{{ profile.id }}</td>
+    <td><a href="{% url profile profile.id %}">{{ profile.First_Name }}</a></td>
     </tr>
 {% endfor %}
 

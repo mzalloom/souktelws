@@ -1,0 +1,26 @@
+{% extends base_template %}
+
+{% block content %}
+
+<br>
+<br>
+<Table border="1">
+<tr>
+<th>ID</th>
+<th>First Name</th>
+<th>Last Name</th>
+<th>Age</th>
+<th>Sex</th>
+<th>Activity</th>
+</tr>
+<tr>
+<td>{{ profile.id }}</td>
+<td>{{profile.First_Name}}</td>
+<td>{{profile.Last_Name}}</td>
+<td>{{profile.Age}}</td>
+<td>{{profile.Sex}}</td>
+<td>{{profile.Activity.name}}</td>
+</tr>
+
+
+{% endblock %}

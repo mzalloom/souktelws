@@ -34,4 +34,4 @@ def profile(request, userid):
     '''Creating object profile and get the users id '''
     
     profile = Profile.objects.get(id=userid)
-    return render_to_response(request,"survey/index.html",{"profile":profile})
+    return render_to_response(request,"survey/profile.html",{"profile":profile})

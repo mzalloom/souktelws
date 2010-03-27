@@ -9,7 +9,7 @@ from rapidsms.parsers.keyworder import Keyworder
 from models import Profile, Activities
 
 from django.utils.translation import ugettext as _
-from django.utils.translation import ugettext_lazy as _
+
  
 
 class App(rapidsms.app.App):
@@ -18,7 +18,7 @@ class App(rapidsms.app.App):
     keyword = Keyworder()
 
     def handle(self, message):
-        ''' dsdsa '''
+        ''' Searchs for the right function and then call it '''
         try:
             func, captures = self.keyword.match(self, message.text)
         except TypeError:

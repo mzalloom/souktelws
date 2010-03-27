@@ -1,12 +1,51 @@
+<!-- This is the HTML which displays our data  -->
+<!-- My Porject Extends Django Template  -->
 {% extends base_template %}
 
 {% block content %}
-<table>
+<br>
+<br>
+<table border="1">
+<tr>
+<th>ID</th>
+<th>Profile</th>
+</tr>
+<!-- function and objects needs to be in between % -->
    {% for record in records %}
-    <tr> <td><a href="{% url profile record.id %}">{{ record.First_Name }}</a></td></tr>
+    <tr>
+<!-- variables retrieved needs to be in between {}  -->
+    <td>{{ record.id }}</td>
+    <td><a href="{% url profile record.id %}">{{ record.First_Name }}</a></td>
+    </tr>
 {% endfor %}
-<h5> No. of  = {{ TotalRecords }}</h5>
+
+<tr>
+<td>Totals</td> <td>{{ TotalRecords }}</td>
+</tr>
 </table>
+<br><br>
+<table border="1">
+<tr>
+<th>Information</th>
+<th>Statistics</th>
+</tr>
+<tr>
+<td>No. of Males</td>
+<td>{{ NoOfMale }}</td>
+</tr>
+<tr>
+<td>No. of Females</td> 
+<td>{{ NoOfFemale }}</td>
+</tr>
+<tr>
+<td>No. of Students</td> 
+<td>{{ NoOfStudents }}</td>
+</tr>
+<tr>
+<td>No. of Workers</td> 
+<td>{{ NoOfWorkers }}</td>
+</tr>
+
+</table>
+
 {% endblock %}
-
-

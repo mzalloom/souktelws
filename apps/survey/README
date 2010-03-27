@@ -1,0 +1,17 @@
+###  Small Survey program                                                                                          ### 
+###  Programmed by Mohannad Zalloom                                                                                ###
+###                                                                                                                ###
+###                                                                                                                ###
+### This is simple program which make some surveys on Stores record                                                ###
+### Who it works :                                                                                                 ###
+###                                                                                                                ###
+### First you need to send 'Help' message                                                                          ###
+### Then you will receive a message tells you to enter the information about you to be stored in the System        ###
+### but you need to be careful when sending data (send it in the right order) .                                    ###
+###                                                                                                                ###
+### Features :                                                                                                     ###
+### 'Find' function searchs the stored records and display the profile for the person if its stored .              ###
+### 'stat' function gives small statistics about the no of stored profiles.                                        ###
+###                                                                                                                ###
+###                                                                                                                ###
+### END                                                                                                            ###
